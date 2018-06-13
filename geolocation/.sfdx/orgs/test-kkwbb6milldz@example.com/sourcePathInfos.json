@@ -1,0 +1,257 @@
+[
+    [
+        "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1528896584131,
+            "changeTime": 1528896584131,
+            "contentHash": "b28b7af69320201d1cf206ebf28373980add1451",
+            "isWorkspace": false,
+            "isArtifactRoot": true
+        }
+    ],
+    [
+        "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1528896584131,
+            "changeTime": 1528896584131,
+            "contentHash": "7505d64a54e061b7acd54ccd58b49dc43500b635",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1528897354085,
+            "changeTime": 1528897354085,
+            "contentHash": "4cfd1989fa44dd1a317ae36b127a22da3b8eae1b"
+        }
+    ],
+    [
+        "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\aura",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\aura",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1528896584131,
+            "changeTime": 1528896584131,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1528896617972,
+            "changeTime": 1528896617972,
+            "contentHash": "3d48858a737ab8c39315eaf1c5149980d1a9cdae",
+            "isWorkspace": true,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\objects\\Account\\fields\\Test__c.field-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\objects\\Account\\fields\\Test__c.field-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 395,
+            "modifiedTime": 1528897354015,
+            "changeTime": 1528897354015,
+            "contentHash": "8ebb26b1995c3d40f68b4425dee8f87d0a30f7fa"
+        }
+    ],
+    [
+        "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\layouts\\Account-Account (Marketing) Layout.layout-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\layouts\\Account-Account (Marketing) Layout.layout-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 9626,
+            "modifiedTime": 1528897354037,
+            "changeTime": 1528897354037,
+            "contentHash": "ffa1ae3fef6b89309c257e80bcfcc7ad11f35378"
+        }
+    ],
+    [
+        "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\layouts\\Account-Account (Sales) Layout.layout-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\layouts\\Account-Account (Sales) Layout.layout-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 9578,
+            "modifiedTime": 1528897354049,
+            "changeTime": 1528897354049,
+            "contentHash": "f91066059d02f5dd680e854b9691b65125f6492f"
+        }
+    ],
+    [
+        "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\layouts\\Account-Account (Support) Layout.layout-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\layouts\\Account-Account (Support) Layout.layout-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 9626,
+            "modifiedTime": 1528897354063,
+            "changeTime": 1528897354063,
+            "contentHash": "16a96208edcd1dfe331e0f10bb972559f3de972b"
+        }
+    ],
+    [
+        "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\layouts\\Account-Account Layout.layout-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\layouts\\Account-Account Layout.layout-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 9578,
+            "modifiedTime": 1528897354074,
+            "changeTime": 1528897354074,
+            "contentHash": "c8da9418afcd1aff212436a599a3ea2d8d02ed52"
+        }
+    ],
+    [
+        "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\profiles\\Custom: Support Profile.profile-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\profiles\\Custom: Support Profile.profile-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 4809,
+            "modifiedTime": 1528897354105,
+            "changeTime": 1528897354105,
+            "contentHash": "e7fa00629376ad5b9f11a73065d8fb22ce11e6fc"
+        }
+    ],
+    [
+        "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\profiles\\Custom: Marketing Profile.profile-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\profiles\\Custom: Marketing Profile.profile-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 4473,
+            "modifiedTime": 1528897354105,
+            "changeTime": 1528897354105,
+            "contentHash": "7f305bdd99c745fa49c5abfa6b838f89881c0c2d"
+        }
+    ],
+    [
+        "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\profiles\\Custom: Sales Profile.profile-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\profiles\\Custom: Sales Profile.profile-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 4469,
+            "modifiedTime": 1528897354105,
+            "changeTime": 1528897354105,
+            "contentHash": "a9818f4b3fd9db0b65d3d28abe799ada91d39cf5"
+        }
+    ],
+    [
+        "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\profiles\\Admin.profile-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\profiles\\Admin.profile-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 17874,
+            "modifiedTime": 1528897354131,
+            "changeTime": 1528897354131,
+            "contentHash": "6cedbde8942772fd8459b5a99a6b17ffde855b33"
+        }
+    ],
+    [
+        "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\objects\\Account\\fields",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\objects\\Account\\fields",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1528897354006,
+            "changeTime": 1528897354006,
+            "contentHash": "7ce110bceb26461491b136d13e45c02e7b067ad3"
+        }
+    ],
+    [
+        "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\objects\\Account",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\objects\\Account",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1528897354002,
+            "changeTime": 1528897354002,
+            "contentHash": "70f132fe13e692866a539996a6b9a05b46076a07"
+        }
+    ],
+    [
+        "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\objects",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\objects",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1528897354001,
+            "changeTime": 1528897354001,
+            "contentHash": "85dfa32c97d8618d1bea083609e2c8a29845abe5"
+        }
+    ],
+    [
+        "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\layouts",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\layouts",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1528897354068,
+            "changeTime": 1528897354068,
+            "contentHash": "be43ec218fd4b2701663c648b5cbe93e57e32129"
+        }
+    ],
+    [
+        "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\profiles",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Users\\andrew.mannering\\Documents\\GitHub\\SF\\geolocation\\force-app\\main\\default\\profiles",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1528897354123,
+            "changeTime": 1528897354123,
+            "contentHash": "28a941c36edc4d0e24ad208bddbadc4530145796"
+        }
+    ]
+]
