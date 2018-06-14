@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Access</fullName>
+    <types>
+        <members>CaseCreateIncident</members>
+        <members>IncidentUtilities</members>
+        <members>RemedyForceGlobalVariables</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>CaseCreateIncident</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>Case.Service</members>
+        <name>BusinessProcess</name>
+    </types>
+    <types>
+        <members>Case.Support</members>
+        <members>Pipeline_Snap__c.Month_and_Week</members>
+        <members>Task.Lightning</members>
+        <name>CompactLayout</name>
+    </types>
+    <types>
+        <members>Access</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>Account.Division__c</members>
+        <members>Account.Head_Office_Account__c</members>
+        <members>Account.Sub_Sector__c</members>
+        <members>Activity.Booking_Type__c</members>
+        <members>Activity.Call_Type__c</members>
+        <members>Activity.Event_Status__c</members>
+        <members>Asset.Asset_Family__c</members>
+        <members>Asset.Contract_Status__c</members>
+        <members>Asset.Contract__c</members>
+        <members>Asset.Module__c</members>
+        <members>Asset.Number_of_Users__c</members>
+        <members>Asset.Renewal_Price__c</members>
+        <members>Asset.Total_Price__c</members>
+        <members>Case.CaseImportance__c</members>
+        <members>Case.CaseWaitingText__c</members>
+        <members>Case.CaseWaiting__c</members>
+        <members>Case.Case_Owner__c</members>
+        <members>Case.ContactEntitlement__c</members>
+        <members>Case.CustomerLastContacted__c</members>
+        <members>Case.HoursSinceLastModified__c</members>
+        <members>Case.HoursWaitingNumber__c</members>
+        <members>Case.HoursWaiting__c</members>
+        <members>Case.ImportanceRecalculation__c</members>
+        <members>Case.Incident__c</members>
+        <members>Case.Time_With_Customer__c</members>
+        <members>Case.Time_With_Support__c</members>
+        <members>Competitor_Product__c.Competitor_Account__c</members>
+        <members>Competitor_Product__c.Division__c</members>
+        <members>Competitor_Product__c.Notes__c</members>
+        <members>Contact.Department__c</members>
+        <members>Contact.Marketing_Status__c</members>
+        <members>Contact.NPS__c</members>
+        <members>Contact.Seniority__c</members>
+        <members>Contact.Status__c</members>
+        <members>ContactEntitlement__c.ContactAccount__c</members>
+        <members>ContactEntitlement__c.ContactID18__c</members>
+        <members>ContactEntitlement__c.Contact__c</members>
+        <members>ContactEntitlement__c.Deleted__c</members>
+        <members>ContactEntitlement__c.EntitlementC__c</members>
+        <members>ContactEntitlement__c.HowToQs__c</members>
+        <members>Contract.Contract_End_Date_Int__c</members>
+        <members>Contract.Contract_Status__c</members>
+        <members>Contract.Contract_Value__c</members>
+        <members>Contract.PlanType__c</members>
+        <members>Contract.ProductRange__c</members>
+        <members>Contract.Type__c</members>
+        <members>Entitlement.Allowed_Phone_Support__c</members>
+        <members>Entitlement.AssociatedProductRange__c</members>
+        <members>Entitlement.EntitledToHowToQuestions__c</members>
+        <members>Entitlement.PlanType__c</members>
+        <members>Entitlement.ProductRouting__c</members>
+        <members>Entitlement.TopicID__c</members>
+        <members>Entitlement__c.AccountName__c</members>
+        <members>Entitlement__c.Account__c</members>
+        <members>Entitlement__c.AllowedPhoneSupport__c</members>
+        <members>Entitlement__c.Allowed_Phone_Support_2__c</members>
+        <members>Entitlement__c.AssetName__c</members>
+        <members>Entitlement__c.AssociatedProductRange__c</members>
+        <members>Entitlement__c.BusinessHours__c</members>
+        <members>Entitlement__c.CasesPerEntitlement__c</members>
+        <members>Entitlement__c.ContractLineItem__c</members>
+        <members>Entitlement__c.Contract__c</members>
+        <members>Entitlement__c.CreatedDate__c</members>
+        <members>Entitlement__c.CustomerSuccessManager__c</members>
+        <members>Entitlement__c.EndDate__c</members>
+        <members>Entitlement__c.EntitledHowToQuestions__c</members>
+        <members>Entitlement__c.Entitlement__c</members>
+        <members>Entitlement__c.HowToQs__c</members>
+        <members>Entitlement__c.IsPerIncident__c</members>
+        <members>Entitlement__c.LastModifiedDate__c</members>
+        <members>Entitlement__c.NamedAgentEntitlement__c</members>
+        <members>Entitlement__c.NoLimitText__c</members>
+        <members>Entitlement__c.NotifyCSMofPendingBreach__c</members>
+        <members>Entitlement__c.NumberOfContacts__c</members>
+        <members>Entitlement__c.PhoneEmailCheckbox__c</members>
+        <members>Entitlement__c.PlanType__c</members>
+        <members>Entitlement__c.RemainingCases__c</members>
+        <members>Entitlement__c.ServiceContract__c</members>
+        <members>Entitlement__c.StartDate__c</members>
+        <members>Entitlement__c.StatusImage__c</members>
+        <members>Entitlement__c.SubProductArea__c</members>
+        <members>Entitlement__c.TopicID__c</members>
+        <members>Licence_Management__c.Licence_Number__c</members>
+        <members>Opportunity.Total_ABC__c</members>
+        <members>Opportunity.Total_Annuals__c</members>
+        <members>Opportunity.Total_Hardware__c</members>
+        <members>Opportunity.Total_Initials__c</members>
+        <members>Opportunity.Total_SAAS__c</members>
+        <members>Opportunity.Total_Services__c</members>
+        <members>Opportunity.Total_Subscriptions__c</members>
+        <members>OpportunityLineItem.Revenue_Type__c</members>
+        <members>Orders__c.Account__c</members>
+        <members>Orders__c.Annuals__c</members>
+        <members>Orders__c.Initals__c</members>
+        <members>Orders__c.IntegrationID__c</members>
+        <members>Orders__c.Invoice_Number__c</members>
+        <members>Orders__c.Product__c</members>
+        <members>Orders__c.Saas__c</members>
+        <members>Orders__c.Services__c</members>
+        <members>Orders__c.Subs__c</members>
+        <members>Orders__c.Transaction_Date__c</members>
+        <members>Pipeline_Snap__c.Month__c</members>
+        <members>Pipeline_Snap__c.Next_30__c</members>
+        <members>Pipeline_Snap__c.Total_ABC__c</members>
+        <members>Pipeline_Snap__c.Total_Saas__c</members>
+        <members>Pipeline_Snap__c.User__c</members>
+        <members>Pipeline_Snap__c.Week__c</members>
+        <members>Pipeline_Snap__c.X30_60__c</members>
+        <members>Pipeline_Snap__c.X60_90__c</members>
+        <members>ProductRouting__c.RoutingGroup__c</members>
+        <members>ProductRouting__c.TopicID__c</members>
+        <members>ProductRouting__c.recordid__c</members>
+        <members>SnapLink__c.Opportunity__c</members>
+        <members>SnapLink__c.Pipeline_Snap__c</members>
+        <members>Targets__c.ABC_Target__c</members>
+        <members>Targets__c.ABC__c</members>
+        <members>Targets__c.Active__c</members>
+        <members>Targets__c.Annuals_MTD__c</members>
+        <members>Targets__c.Annuals_Target__c</members>
+        <members>Targets__c.Annuals__c</members>
+        <members>Targets__c.FY_Start__c</members>
+        <members>Targets__c.Initails_MTD__c</members>
+        <members>Targets__c.Initals_Target__c</members>
+        <members>Targets__c.Initals__c</members>
+        <members>Targets__c.IntergrationID__c</members>
+        <members>Targets__c.ManagerCheck__c</members>
+        <members>Targets__c.Manager__c</members>
+        <members>Targets__c.Period__c</members>
+        <members>Targets__c.Presidents_Club_Qualified__c</members>
+        <members>Targets__c.Presidents_Clubs_Target__c</members>
+        <members>Targets__c.Presidents_Clubs__c</members>
+        <members>Targets__c.Saas_MTD__c</members>
+        <members>Targets__c.Saas_Target__c</members>
+        <members>Targets__c.Saas__c</members>
+        <members>Targets__c.Services_MTD__c</members>
+        <members>Targets__c.Services_Target__c</members>
+        <members>Targets__c.Services__c</members>
+        <members>Targets__c.Subs_MTD__c</members>
+        <members>Targets__c.Subs_Target__c</members>
+        <members>Targets__c.Subs__c</members>
+        <members>Targets__c.Team_ABC_Target__c</members>
+        <members>Targets__c.Users__c</members>
+        <members>User.ContactID18__c</members>
+        <members>Work_Items__c.Assigned_To__c</members>
+        <members>Work_Items__c.Case__c</members>
+        <members>Work_Items__c.Due_Date__c</members>
+        <members>Work_Items__c.Subject__c</members>
+        <members>Work_Items__c.Time_to_Complete__c</members>
+        <members>Work_Items__c.X2000__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>CMDB_Class_Class_Name_Business_Service</members>
+        <members>Request_Definition_Name_Decommission_Service</members>
+        <members>Status_Name_Closed</members>
+        <members>Template_Name_Service_Cloud</members>
+        <name>CustomLabel</name>
+    </types>
+    <types>
+        <members>Competitor_Product__c</members>
+        <members>ContactEntitlement__c</members>
+        <members>Entitlement__c</members>
+        <members>Licence_Management__c</members>
+        <members>Orders__c</members>
+        <members>Pipeline_Snap__c</members>
+        <members>ProductRouting__c</members>
+        <members>SnapLink__c</members>
+        <members>Targets__c</members>
+        <members>Work_Items__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Competitor_Product__c</members>
+        <members>Licence_Management__c</members>
+        <members>Orders__c</members>
+        <members>Pipeline_Snap__c</members>
+        <members>SnapLink__c</members>
+        <members>Targets__c</members>
+        <members>Work_Items__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Admin_Docs</members>
+        <members>Admin_Docs/Access_App_Logo.png</members>
+        <name>Document</name>
+    </types>
+    <types>
+        <members>Pipeline_Snap_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Division</members>
+        <members>Person_Department</members>
+        <members>Person_Seniority</members>
+        <members>ProductRange</members>
+        <members>Sub_Sector</members>
+        <name>GlobalValueSet</name>
+    </types>
+    <types>
+        <members>Account-Access Service Layout</members>
+        <members>Account-Addresses Layout</members>
+        <members>Account-Community - Customer Layout</members>
+        <members>Account-Customer Layout</members>
+        <members>Account-Customer Layout - Bizible</members>
+        <members>Asset-Asset Layout</members>
+        <members>CampaignMember-Campaign Member Page Layout</members>
+        <members>Case-Access Support Page Layout</members>
+        <members>Case-Case Layout</members>
+        <members>Case-Community Case Layout</members>
+        <members>Case-Community Issue%26Actions</members>
+        <members>Case-Customer Services Layout</members>
+        <members>Case-Escalation Page Layout</members>
+        <members>CaseMilestone-Case Milestone Layout</members>
+        <members>Competitor_Product__c-Competitor Product Layout</members>
+        <members>Contact-Access Support Layout</members>
+        <members>Contact-Community Create Contact</members>
+        <members>Contact-Contact Layout</members>
+        <members>Contact-Contact Layout - Bizible</members>
+        <members>ContactEntitlement__c-ContactEntitlement Layout</members>
+        <members>ContentVersion-Content Version</members>
+        <members>Contract-Competitor Contract</members>
+        <members>Contract-Contract Layout</members>
+        <members>ContractLineItem-Contract Line Item Layout</members>
+        <members>DuplicateRecordItem-Duplicate Record Item Layout</members>
+        <members>DuplicateRecordSet-Duplicate Record Set Layout</members>
+        <members>Entitlement-Entitlement Layout</members>
+        <members>Entitlement__c-Entitlement Layout</members>
+        <members>Event-Consultant Visit Layout</members>
+        <members>Event-Event Layout</members>
+        <members>Licence_Management__c-Licence Management Layout</members>
+        <members>Opportunity-Business Development Opportunity Layout</members>
+        <members>Opportunity-CQL Opportunity Layout</members>
+        <members>Orders__c-Orders Layout</members>
+        <members>Pipeline_Snap__c-Pipeline Snap Layout</members>
+        <members>ProductRouting__c-Product Routing Layout</members>
+        <members>ProfileSkillEndorsement-Endorsement Layout</members>
+        <members>SnapLink__c-SnapLink Layout</members>
+        <members>Targets__c-SalesUserLayout</members>
+        <members>Targets__c-Targets Layout</members>
+        <members>Task-Demo Call Task Layout</members>
+        <members>WorkBadge-Badge Layout</members>
+        <members>WorkBadge-Badge Received Layout 192</members>
+        <members>WorkBadgeDefinition-Badge Definition Layout</members>
+        <members>WorkBadgeDefinition-Badge Layout 192</members>
+        <members>Work_Items__c-Work Item Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Competitor_Product__c.All_Competitor_Products</members>
+        <members>ContactEntitlement__c.All</members>
+        <members>Entitlement__c.All</members>
+        <members>Licence_Management__c.All</members>
+        <members>Orders__c.All</members>
+        <members>Pipeline_Snap__c.All</members>
+        <members>ProductRouting__c.All</members>
+        <members>ProductRouting__c.All1</members>
+        <members>SnapLink__c.All</members>
+        <members>Targets__c.All</members>
+        <members>Work_Items__c.All</members>
+        <members>Work_Items__c.My_Work_Items</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>Case.NewChildCase</members>
+        <members>Case.SendEmail</members>
+        <members>LogACall</members>
+        <members>NewCase</members>
+        <members>NewEvent</members>
+        <members>NewTask</members>
+        <members>SendEmail</members>
+        <name>QuickAction</name>
+    </types>
+    <types>
+        <members>Case.Query</members>
+        <members>Event.Event</members>
+        <members>Task.Task</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>Entitlement__c.LimitConatcts</members>
+        <members>Entitlement__c.MustBePremierForNamedAgent</members>
+        <name>ValidationRule</name>
+    </types>
+    <types>
+        <members>Account.Competitor_Contract_Quik_Create</members>
+        <members>Account.GoogleMaps</members>
+        <members>Account.GoogleNews</members>
+        <members>Account.GoogleSearch</members>
+        <members>Account.Launch_Survey</members>
+        <members>Account.New_Address</members>
+        <members>Account.Pipeline_Health</members>
+        <members>Case.CloseCaseCustom</members>
+        <members>Case.Create_Incident</members>
+        <members>Case.CustomerConnections</members>
+        <members>Case.DataRegister</members>
+        <members>Case.Reparent_Child_Case</members>
+        <members>Case.Resolve_Case</members>
+        <members>Case.UpdateCaseWaitingTime</members>
+        <members>Contact.GoogleMaps</members>
+        <members>Contact.GoogleSearch</members>
+        <name>WebLink</name>
+    </types>
+    <version>43.0</version>
+</Package>

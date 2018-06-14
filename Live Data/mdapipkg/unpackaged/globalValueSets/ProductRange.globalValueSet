@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>aCloud Approve</fullName>
+        <default>false</default>
+        <label>aCloud Approve</label>
+    </customValue>
+    <customValue>
+        <fullName>aCloud Capture</fullName>
+        <default>false</default>
+        <label>aCloud Capture</label>
+    </customValue>
+    <customValue>
+        <fullName>aCloud Collaborate</fullName>
+        <default>false</default>
+        <label>aCloud Collaborate</label>
+    </customValue>
+    <customValue>
+        <fullName>aCloud CRM</fullName>
+        <default>false</default>
+        <label>aCloud CRM</label>
+    </customValue>
+    <customValue>
+        <fullName>aCloud Document</fullName>
+        <default>false</default>
+        <label>aCloud Document</label>
+    </customValue>
+    <customValue>
+        <fullName>aCloud Expense</fullName>
+        <default>false</default>
+        <label>aCloud Expense</label>
+    </customValue>
+    <customValue>
+        <fullName>aCloud Financials</fullName>
+        <default>false</default>
+        <label>aCloud Financials</label>
+    </customValue>
+    <customValue>
+        <fullName>aCloud Forecast</fullName>
+        <default>false</default>
+        <label>aCloud Forecast</label>
+    </customValue>
+    <customValue>
+        <fullName>aCloud HR</fullName>
+        <default>false</default>
+        <label>aCloud HR</label>
+    </customValue>
+    <customValue>
+        <fullName>aCloud Insight</fullName>
+        <default>false</default>
+        <label>aCloud Insight</label>
+    </customValue>
+    <customValue>
+        <fullName>aCloud Portal</fullName>
+        <default>false</default>
+        <label>aCloud Portal</label>
+    </customValue>
+    <customValue>
+        <fullName>aCloud Postcode</fullName>
+        <default>false</default>
+        <label>aCloud Postcode</label>
+    </customValue>
+    <customValue>
+        <fullName>Actionfile Payroll</fullName>
+        <default>false</default>
+        <label>Actionfile Payroll</label>
+    </customValue>
+    <customValue>
+        <fullName>ADMS</fullName>
+        <default>false</default>
+        <label>ADMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Atlas IP</fullName>
+        <default>false</default>
+        <label>Atlas IP</label>
+    </customValue>
+    <customValue>
+        <fullName>CareBlox</fullName>
+        <default>false</default>
+        <label>CareBlox</label>
+    </customValue>
+    <customValue>
+        <fullName>Changeworknow</fullName>
+        <default>false</default>
+        <label>Changeworknow</label>
+    </customValue>
+    <customValue>
+        <fullName>Dashboard</fullName>
+        <default>false</default>
+        <label>Dashboard</label>
+    </customValue>
+    <customValue>
+        <fullName>DeltaBond</fullName>
+        <default>false</default>
+        <label>DeltaBond</label>
+    </customValue>
+    <customValue>
+        <fullName>DeltaWMS</fullName>
+        <default>false</default>
+        <label>DeltaWMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Dimensions</fullName>
+        <default>false</default>
+        <label>Dimensions</label>
+    </customValue>
+    <customValue>
+        <fullName>Dimensions SaaS</fullName>
+        <default>false</default>
+        <label>Dimensions SaaS</label>
+    </customValue>
+    <customValue>
+        <fullName>Earnie Payroll</fullName>
+        <default>false</default>
+        <label>Earnie Payroll</label>
+    </customValue>
+    <customValue>
+        <fullName>Emcom FMS</fullName>
+        <default>false</default>
+        <label>Emcom FMS</label>
+    </customValue>
+    <customValue>
+        <fullName>EnterpriSe</fullName>
+        <default>false</default>
+        <label>EnterpriSe</label>
+    </customValue>
+    <customValue>
+        <fullName>FactoryMaster</fullName>
+        <default>false</default>
+        <label>FactoryMaster</label>
+    </customValue>
+    <customValue>
+        <fullName>FocalPoint</fullName>
+        <default>false</default>
+        <label>FocalPoint</label>
+    </customValue>
+    <customValue>
+        <fullName>FocalPoint SaaS</fullName>
+        <default>false</default>
+        <label>FocalPoint SaaS</label>
+    </customValue>
+    <customValue>
+        <fullName>FPS Web</fullName>
+        <default>false</default>
+        <label>FPS Web</label>
+    </customValue>
+    <customValue>
+        <fullName>Gamma</fullName>
+        <default>false</default>
+        <label>Gamma</label>
+    </customValue>
+    <customValue>
+        <fullName>Goldmine</fullName>
+        <default>false</default>
+        <label>Goldmine</label>
+    </customValue>
+    <customValue>
+        <fullName>Goldmine EE</fullName>
+        <default>false</default>
+        <label>Goldmine EE</label>
+    </customValue>
+    <customValue>
+        <fullName>HCSS Accounting</fullName>
+        <default>false</default>
+        <label>HCSS Accounting</label>
+    </customValue>
+    <customValue>
+        <fullName>HCSS Budgeting</fullName>
+        <default>false</default>
+        <label>HCSS Budgeting</label>
+    </customValue>
+    <customValue>
+        <fullName>HCSS Curriculum RP</fullName>
+        <default>false</default>
+        <label>HCSS Curriculum RP</label>
+    </customValue>
+    <customValue>
+        <fullName>HCSS Links</fullName>
+        <default>false</default>
+        <label>HCSS Links</label>
+    </customValue>
+    <customValue>
+        <fullName>HCSS People</fullName>
+        <default>false</default>
+        <label>HCSS People</label>
+    </customValue>
+    <customValue>
+        <fullName>Horizons</fullName>
+        <default>false</default>
+        <label>Horizons</label>
+    </customValue>
+    <customValue>
+        <fullName>iConneKt</fullName>
+        <default>false</default>
+        <label>iConneKt</label>
+    </customValue>
+    <customValue>
+        <fullName>Insight</fullName>
+        <default>false</default>
+        <label>Insight</label>
+    </customValue>
+    <customValue>
+        <fullName>Invu</fullName>
+        <default>false</default>
+        <label>Invu</label>
+    </customValue>
+    <customValue>
+        <fullName>Missing</fullName>
+        <default>false</default>
+        <label>Missing</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobizio</fullName>
+        <default>false</default>
+        <label>Mobizio</label>
+    </customValue>
+    <customValue>
+        <fullName>Orbis</fullName>
+        <default>false</default>
+        <label>Orbis</label>
+    </customValue>
+    <customValue>
+        <fullName>Orchestrate</fullName>
+        <default>false</default>
+        <label>Orchestrate</label>
+    </customValue>
+    <customValue>
+        <fullName>Orchestrate SaaS</fullName>
+        <default>false</default>
+        <label>Orchestrate SaaS</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Access IP</fullName>
+        <default>false</default>
+        <label>Other Access IP</label>
+    </customValue>
+    <customValue>
+        <fullName>Payroll</fullName>
+        <default>false</default>
+        <label>Payroll</label>
+    </customValue>
+    <customValue>
+        <fullName>Payroll SaaS</fullName>
+        <default>false</default>
+        <label>Payroll SaaS</label>
+    </customValue>
+    <customValue>
+        <fullName>Payroll SE</fullName>
+        <default>false</default>
+        <label>Payroll SE</label>
+    </customValue>
+    <customValue>
+        <fullName>PeoplePlanner</fullName>
+        <default>false</default>
+        <label>PeoplePlanner</label>
+    </customValue>
+    <customValue>
+        <fullName>RDB Cloud</fullName>
+        <default>false</default>
+        <label>RDB Cloud</label>
+    </customValue>
+    <customValue>
+        <fullName>RDB Pronet</fullName>
+        <default>false</default>
+        <label>RDB Pronet</label>
+    </customValue>
+    <customValue>
+        <fullName>RDB Pronet Rental</fullName>
+        <default>false</default>
+        <label>RDB Pronet Rental</label>
+    </customValue>
+    <customValue>
+        <fullName>RDB Pronet VO</fullName>
+        <default>false</default>
+        <label>RDB Pronet VO</label>
+    </customValue>
+    <customValue>
+        <fullName>Saber</fullName>
+        <default>false</default>
+        <label>Saber</label>
+    </customValue>
+    <customValue>
+        <fullName>Safe EMS</fullName>
+        <default>false</default>
+        <label>Safe EMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Safe Financials</fullName>
+        <default>false</default>
+        <label>Safe Financials</label>
+    </customValue>
+    <customValue>
+        <fullName>Safe Tempest</fullName>
+        <default>false</default>
+        <label>Safe Tempest</label>
+    </customValue>
+    <customValue>
+        <fullName>Sazneo</fullName>
+        <default>false</default>
+        <label>Sazneo</label>
+    </customValue>
+    <customValue>
+        <fullName>Select HR</fullName>
+        <default>false</default>
+        <label>Select HR</label>
+    </customValue>
+    <customValue>
+        <fullName>Select HR SaaS</fullName>
+        <default>false</default>
+        <label>Select HR SaaS</label>
+    </customValue>
+    <customValue>
+        <fullName>Selima HR &amp; Scheduling</fullName>
+        <default>false</default>
+        <label>Selima HR &amp; Scheduling</label>
+    </customValue>
+    <customValue>
+        <fullName>Service Manager</fullName>
+        <default>false</default>
+        <label>Service Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Supply Chain</fullName>
+        <default>false</default>
+        <label>Supply Chain</label>
+    </customValue>
+    <customValue>
+        <fullName>TeamSeer</fullName>
+        <default>false</default>
+        <label>TeamSeer</label>
+    </customValue>
+    <customValue>
+        <fullName>thankQ</fullName>
+        <default>false</default>
+        <label>thankQ</label>
+    </customValue>
+    <customValue>
+        <fullName>thankQ SaaS</fullName>
+        <default>false</default>
+        <label>thankQ SaaS</label>
+    </customValue>
+    <customValue>
+        <fullName>Topaz EMS</fullName>
+        <default>false</default>
+        <label>Topaz EMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Safe Screening</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Safe Screening</label>
+    </customValue>
+    <customValue>
+        <fullName>ACLOUD</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ACLOUD</label>
+    </customValue>
+    <customValue>
+        <fullName>APS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>APS</label>
+    </customValue>
+    <customValue>
+        <fullName>CareBlox T&amp;A Hardware</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CareBlox T&amp;A Hardware</label>
+    </customValue>
+    <customValue>
+        <fullName>CareBlox T&amp;A Payroll</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CareBlox T&amp;A Payroll</label>
+    </customValue>
+    <customValue>
+        <fullName>CareBlox Clients</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CareBlox Clients</label>
+    </customValue>
+    <customValue>
+        <fullName>CareBlox Purchasing</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CareBlox Purchasing</label>
+    </customValue>
+    <customValue>
+        <fullName>CareBlox Forms</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CareBlox Forms</label>
+    </customValue>
+    <customValue>
+        <fullName>CareBlox Check-It</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CareBlox Check-It</label>
+    </customValue>
+    <customValue>
+        <fullName>CareBlox Allowances</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CareBlox Allowances</label>
+    </customValue>
+    <customValue>
+        <fullName>DX</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>DX</label>
+    </customValue>
+    <customValue>
+        <fullName>Delta</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Delta</label>
+    </customValue>
+    <customValue>
+        <fullName>DWMS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>DWMS</label>
+    </customValue>
+    <customValue>
+        <fullName>FM Tech</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FM Tech</label>
+    </customValue>
+    <customValue>
+        <fullName>Firstchoice</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Firstchoice</label>
+    </customValue>
+    <customValue>
+        <fullName>Gamma Hardware</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Gamma Hardware</label>
+    </customValue>
+    <customValue>
+        <fullName>HR</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>HR</label>
+    </customValue>
+    <customValue>
+        <fullName>Paypoint</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Paypoint</label>
+    </customValue>
+    <customValue>
+        <fullName>Payroll SQL</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Payroll SQL</label>
+    </customValue>
+    <customValue>
+        <fullName>SDK</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SDK</label>
+    </customValue>
+    <customValue>
+        <fullName>SME</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SME</label>
+    </customValue>
+    <customValue>
+        <fullName>thankQCRM</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>thankQCRM</label>
+    </customValue>
+    <customValue>
+        <fullName>aCloud Approve1111</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>aCloud Approve1111</label>
+    </customValue>
+    <customValue>
+        <fullName>ACLOUD - HCM</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ACLOUD - HCM</label>
+    </customValue>
+    <customValue>
+        <fullName>Accounts</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Accounts</label>
+    </customValue>
+    <customValue>
+        <fullName>Add On&apos;s</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Add On&apos;s</label>
+    </customValue>
+    <description>High level product names</description>
+    <masterLabel>Product Range</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
