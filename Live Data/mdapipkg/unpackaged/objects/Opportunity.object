@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Total_ABC__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Total_Initials__c/3) +  (Total_Hardware__c /3) + Total_Annuals__c + Total_SAAS__c + Total_Subscriptions__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total ABC</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Annuals__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Annuals</label>
+        <summarizedField>OpportunityLineItem.TotalPrice</summarizedField>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.Revenue_Type__c</field>
+            <operation>equals</operation>
+            <value>Annual Licences</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Hardware__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Hardware</label>
+        <summarizedField>OpportunityLineItem.TotalPrice</summarizedField>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.Revenue_Type__c</field>
+            <operation>equals</operation>
+            <value>Hardware</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Initials__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Initials</label>
+        <summarizedField>OpportunityLineItem.TotalPrice</summarizedField>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.Revenue_Type__c</field>
+            <operation>equals</operation>
+            <value>Initial Licences</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_SAAS__c</fullName>
+        <externalId>false</externalId>
+        <label>Total SAAS</label>
+        <summarizedField>OpportunityLineItem.TotalPrice</summarizedField>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.Revenue_Type__c</field>
+            <operation>equals</operation>
+            <value>SAAS</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Services__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Services</label>
+        <summarizedField>OpportunityLineItem.TotalPrice</summarizedField>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.Revenue_Type__c</field>
+            <operation>equals</operation>
+            <value>Services</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Subscriptions__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Subscriptions</label>
+        <summarizedField>OpportunityLineItem.TotalPrice</summarizedField>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.Revenue_Type__c</field>
+            <operation>equals</operation>
+            <value>Subscriptions</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+</CustomObject>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>CMDB_Class_Class_Name_Business_Service</fullName>
+        <categories>RemedyForce Integration</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CMDB Class - Class Name - Business Service</shortDescription>
+        <value>BMC_BusinessService</value>
+    </labels>
+    <labels>
+        <fullName>Request_Definition_Name_Decommission_Service</fullName>
+        <categories>RemedyForce Integration</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Request Definition - Name - Decommission Service</shortDescription>
+        <value>Decommission Service</value>
+    </labels>
+    <labels>
+        <fullName>Status_Name_Closed</fullName>
+        <categories>RemedyForce Integration</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Status - Name - Closed</shortDescription>
+        <value>COMPLETE</value>
+    </labels>
+    <labels>
+        <fullName>Template_Name_Service_Cloud</fullName>
+        <categories>RemedyForce Integration</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Template - Name - Service Cloud</shortDescription>
+        <value>Service Cloud Case</value>
+    </labels>
+</CustomLabels>

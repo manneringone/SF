@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>AccountName__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Entitlement</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>true</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>EntitlementC</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AllowedPhoneSupport__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(   PlanType__c , 
+&quot;Premier&quot;,  IMAGE(&quot;/img/msg_icons/confirm16.png&quot;, &quot;Entitled to Phone Support&quot;), 
+&quot;Standard&quot;, IMAGE(&quot;/img/msg_icons/confirm16.png&quot;, &quot;Entitled to Phone Support&quot;),
+&quot;Classic&quot;, IMAGE(&quot;/img/msg_icons/confirm16.png&quot;, &quot;Entitled to Phone Support&quot;), 
+&quot;Essential&quot;, IMAGE(&quot;/img/msg_icons/error16.png&quot;, &quot;Not Entitled to Phone Support&quot;),
+&quot;No Phone Support&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Phone/Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Allowed_Phone_Support_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+OR(PlanType__c = &quot;Premier Plan&quot;, PlanType__c =&quot;Standard Plan&quot;,PlanType__c = &quot;Classic Plan&quot;),TRUE,FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Allowed Phone Support (2)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AssetName__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Asset Name</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipName>Entitlement</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AssociatedProductRange__c</fullName>
+        <externalId>false</externalId>
+        <label>Associated Product Range</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ProductRange</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>BusinessHours__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Business Hours</label>
+        <referenceTo>BusinessHours</referenceTo>
+        <relationshipName>Entitlement</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CasesPerEntitlement__c</fullName>
+        <externalId>false</externalId>
+        <label>Cases Per Entitlement</label>
+        <precision>9</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ContractLineItem__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contract Line Item</label>
+        <referenceTo>ContractLineItem</referenceTo>
+        <relationshipName>Entitlement</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contract__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contract</label>
+        <referenceTo>Contract</referenceTo>
+        <relationshipName>Entitlement_c</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CreatedDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Created Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CustomerSuccessManager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Customer Success Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Entitlement_c</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>EndDate__c</fullName>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>EntitledHowToQuestions__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(  PlanType__c  , 
+
+      &quot;Premier&quot;,  IMAGE(&quot;/img/msg_icons/confirm16.png&quot;, &quot;Access to How To Questions&quot;), 
+
+      &quot;Standard&quot;, IMAGE(&quot;/img/msg_icons/confirm16.png&quot;, &quot;Access to How To Questions&quot;),
+
+      &quot;Classic&quot;, IMAGE(&quot;/img/msg_icons/error16.png&quot;, &quot;Access to How To Questions&quot;),
+
+      &quot;Essential&quot;, IMAGE(&quot;/img/msg_icons/error16.png&quot;, &quot;Access to How To Questions&quot;),
+
+      &quot;No Plan Selected&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>&quot;How To&quot; Qs</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Entitlement__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Entitlement</label>
+        <referenceTo>Entitlement</referenceTo>
+        <relationshipName>EntitlementC</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>HowToQs__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>HowToQs</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsPerIncident__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Per Incident</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LastModifiedDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Modified Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>NamedAgentEntitlement__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Named Agent (Premier Plan Only)</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Entitlement_c1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>NoLimitText__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;No Limit&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>No Limit Text</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NotifyCSMofPendingBreach__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Notify CSM of Pending Breach</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NumberOfContacts__c</fullName>
+        <externalId>false</externalId>
+        <label>Number Of Contacts</label>
+        <summaryForeignKey>ContactEntitlement__c.EntitlementC__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PhoneEmailCheckbox__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Phone/Email</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PlanType__c</fullName>
+        <externalId>false</externalId>
+        <label>Plan Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RemainingCases__c</fullName>
+        <externalId>false</externalId>
+        <label>Remaining Cases</label>
+        <precision>9</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ServiceContract__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Service Contract</label>
+        <referenceTo>ServiceContract</referenceTo>
+        <relationshipName>Entitlement_c</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>StartDate__c</fullName>
+        <externalId>false</externalId>
+        <label>StartDate</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>StatusImage__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( (EndDate__c - StartDate__c  &gt;0), &quot;Active&quot;, &quot;Inactive&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SubProductArea__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Sub Product Area</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipName>Entitlement_c</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TopicID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Entitlement__r.TopicID__c</formula>
+        <label>Topic ID</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Entitlement</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Entitlement Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Entitlements</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>LimitConatcts</fullName>
+        <active>true</active>
+        <description>Limits the number of contacts that can be associated to the Entitlement</description>
+        <errorConditionFormula>( PlanType__c = &quot;Premier&quot; &amp;&amp; NumberOfContacts__c  &gt; 8) 
+|| 
+(PlanType__c = &quot;Essential&quot; &amp;&amp; NumberOfContacts__c &gt; 2) 
+|| 
+(PlanType__c = &quot;Standard&quot; &amp;&amp; NumberOfContacts__c  &gt; 4)</errorConditionFormula>
+        <errorMessage>You have exceeded the amount of authorised contacts for the plan selected</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>MustBePremierForNamedAgent</fullName>
+        <active>true</active>
+        <description>Must be be a premier plan to have named agent</description>
+        <errorConditionFormula>(PlanType__c = &quot;Standard&quot; &amp;&amp; NOT(ISBLANK(NamedAgentEntitlement__c ))) 
+
+|| 
+
+(PlanType__c = &quot;Essential&quot; &amp;&amp; NOT(ISBLANK(NamedAgentEntitlement__c ))) 
+
+|| 
+
+(PlanType__c = &quot;Classic&quot; &amp;&amp; NOT(ISBLANK(NamedAgentEntitlement__c )))</errorConditionFormula>
+        <errorMessage>Named Agent can only be associated with Premier Plan entitlements</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

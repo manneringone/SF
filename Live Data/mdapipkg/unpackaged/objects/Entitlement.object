@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Allowed_Phone_Support__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(   PlanType__c , 
+&quot;Premier&quot;,  IMAGE(&quot;/img/msg_icons/confirm16.png&quot;, &quot;Entitled to Phone Support&quot;), 
+&quot;Standard&quot;, IMAGE(&quot;/img/msg_icons/confirm16.png&quot;, &quot;Entitled to Phone Support&quot;),
+&quot;Classic&quot;, IMAGE(&quot;/img/msg_icons/confirm16.png&quot;, &quot;Entitled to Phone Support&quot;), 
+&quot;Essential&quot;, IMAGE(&quot;/img/msg_icons/error16.png&quot;, &quot;Not Entitled to Phone Support&quot;),
+&quot;No Phone Support&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Phone/Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AssociatedProductRange__c</fullName>
+        <externalId>false</externalId>
+        <label>Associated Product Range</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ProductRange</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EntitledToHowToQuestions__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(  PlanType__c  , 
+
+      &quot;Premier&quot;,  IMAGE(&quot;/img/msg_icons/confirm16.png&quot;, &quot;Access to How To Questions&quot;), 
+
+      &quot;Standard&quot;, IMAGE(&quot;/img/msg_icons/confirm16.png&quot;, &quot;Access to How To Questions&quot;),
+
+      &quot;Classic&quot;, IMAGE(&quot;/img/msg_icons/error16.png&quot;, &quot;Access to How To Questions&quot;),
+
+      &quot;Essential&quot;, IMAGE(&quot;/img/msg_icons/error16.png&quot;, &quot;Access to How To Questions&quot;),
+
+      &quot;No Plan Selected&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>&quot;How To&quot; Qs</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PlanType__c</fullName>
+        <externalId>false</externalId>
+        <label>Plan Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ProductRouting__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product Routing</label>
+        <referenceTo>ProductRouting__c</referenceTo>
+        <relationshipLabel>Entitlements</relationshipLabel>
+        <relationshipName>Entitlements</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TopicID__c</fullName>
+        <externalId>false</externalId>
+        <formula>ProductRouting__r.TopicID__c</formula>
+        <label>Topic ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

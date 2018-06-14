@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Business Transformation Team</fullName>
+        <default>false</default>
+        <label>Business Transformation Team</label>
+    </customValue>
+    <customValue>
+        <fullName>Customer Services</fullName>
+        <default>false</default>
+        <label>Customer Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Director</fullName>
+        <default>false</default>
+        <label>Director</label>
+    </customValue>
+    <customValue>
+        <fullName>Engineering</fullName>
+        <default>false</default>
+        <label>Engineering</label>
+    </customValue>
+    <customValue>
+        <fullName>Executive Team</fullName>
+        <default>false</default>
+        <label>Executive Team</label>
+    </customValue>
+    <customValue>
+        <fullName>Finance</fullName>
+        <default>false</default>
+        <label>Finance</label>
+    </customValue>
+    <customValue>
+        <fullName>FundRaising</fullName>
+        <default>false</default>
+        <label>FundRaising</label>
+    </customValue>
+    <customValue>
+        <fullName>Health &amp; Safety</fullName>
+        <default>false</default>
+        <label>Health &amp; Safety</label>
+    </customValue>
+    <customValue>
+        <fullName>HR</fullName>
+        <default>false</default>
+        <label>HR</label>
+    </customValue>
+    <customValue>
+        <fullName>IT</fullName>
+        <default>false</default>
+        <label>IT</label>
+    </customValue>
+    <customValue>
+        <fullName>Logistics</fullName>
+        <default>false</default>
+        <label>Logistics</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketing</fullName>
+        <default>false</default>
+        <label>Marketing</label>
+    </customValue>
+    <customValue>
+        <fullName>Operations</fullName>
+        <default>false</default>
+        <label>Operations</label>
+    </customValue>
+    <customValue>
+        <fullName>Payroll</fullName>
+        <default>false</default>
+        <label>Payroll</label>
+    </customValue>
+    <customValue>
+        <fullName>Planning</fullName>
+        <default>false</default>
+        <label>Planning</label>
+    </customValue>
+    <customValue>
+        <fullName>Production</fullName>
+        <default>false</default>
+        <label>Production</label>
+    </customValue>
+    <customValue>
+        <fullName>Property</fullName>
+        <default>false</default>
+        <label>Property</label>
+    </customValue>
+    <customValue>
+        <fullName>Purchasing</fullName>
+        <default>false</default>
+        <label>Purchasing</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales</fullName>
+        <default>false</default>
+        <label>Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Service/Support</fullName>
+        <default>false</default>
+        <label>Service/Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical</fullName>
+        <default>false</default>
+        <label>Technical</label>
+    </customValue>
+    <customValue>
+        <fullName>Warehouse</fullName>
+        <default>false</default>
+        <label>Warehouse</label>
+    </customValue>
+    <masterLabel>Person Department</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

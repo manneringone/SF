@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <businessProcesses>
+        <fullName>Service</fullName>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Access Outstanding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Fix Confirmation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Outstanding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Development Outstanding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support Outstanding</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Third Party Outstanding</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <compactLayouts>
+        <fullName>Support</fullName>
+        <fields>Subject</fields>
+        <fields>CaseNumber</fields>
+        <fields>Status</fields>
+        <fields>CaseImportance__c</fields>
+        <label>Support</label>
+    </compactLayouts>
+    <fields>
+        <fullName>CaseImportance__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+
+HoursWaitingNumber__c   &gt;= 1,
+
+ (HoursWaitingNumber__c 
+ * 
+(( HoursSinceLastModified__c * 30)/100) 
+ * 
+CASE( Priority , &quot;1&quot;, 16, &quot;2&quot;, 4, &quot;3&quot;, 2, &quot;4&quot;, 1, 1)), 
+
+0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Importance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CaseWaitingText__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( CaseWaiting__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CaseWaitingText</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CaseWaiting__c</fullName>
+        <externalId>false</externalId>
+        <formula>Time_With_Customer__c +  Time_With_Support__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Waiting</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Owner__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+LEFT(OwnerId, 3) == &apos;00G&apos;,
+HYPERLINK(&quot;/p/own/Queue/d?id=&quot; &amp; OwnerId, Owner:Queue.QueueName),
+HYPERLINK(&quot;/Support/s/profile/&quot; &amp; OwnerId, Owner:User.FirstName &amp; &quot; &quot; &amp; Owner:User.LastName)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Owner</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ContactEntitlement__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>If you are unable to find any products please raise an Entitlement Query or ask your question in the community</inlineHelpText>
+        <label>Entitled Products</label>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <errorMessage>Entitlement selected is not found against your contact record</errorMessage>
+            <filterItems>
+                <field>ContactEntitlement__c.ContactID18__c</field>
+                <operation>equals</operation>
+                <valueField>$User.ContactID18__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>ContactEntitlement__c.Contact__r.Id</field>
+                <operation>equals</operation>
+                <valueField>$Source.ContactId</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>ContactEntitlement__c</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CustomerLastContacted__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Last Contacted</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>HoursSinceLastModified__c</fullName>
+        <externalId>false</externalId>
+        <formula>((NOW()- CustomerLastContacted__c )*24*60)/60</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Hours Since Last Modified</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HoursWaitingNumber__c</fullName>
+        <externalId>false</externalId>
+        <formula>VALUE(HoursWaiting__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Hours Waiting Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HoursWaiting__c</fullName>
+        <externalId>false</externalId>
+        <formula>LEFT(&quot;0&quot; &amp; CaseWaitingText__c  , FIND(&quot;.&quot;, CaseWaitingText__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Hours Waiting</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ImportanceRecalculation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Importance Recalculation</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Incident__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>RemedyForce Incident</label>
+        <referenceTo>BMCServiceDesk__Incident__c</referenceTo>
+        <relationshipLabel>Service Cloud Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Time_With_Customer__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>The time in business hours that this case spent in the hands of the customer.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The time in business hours that this case spent in the hands of the customer.</inlineHelpText>
+        <label>Time With Customer</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_With_Support__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>The time in business hours that this case spent with support.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The time in business hours that this case spent with support.</inlineHelpText>
+        <label>Time With Support</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <recordTypes>
+        <fullName>Query</fullName>
+        <active>true</active>
+        <businessProcess>Service</businessProcess>
+        <compactLayoutAssignment>Support</compactLayoutAssignment>
+        <description>Cases relating to billing, renewals, queries around account managers, change of address or information requests</description>
+        <label>Query</label>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Chatter Answers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Complex functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User didn%27t attend training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Feature Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <webLinks>
+        <fullName>CloseCaseCustom</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Close Case</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <url>/{!Case.Id}/s?retURL=%2F{!Case.Id}&amp;cas7=Closed</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Create_Incident</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Create Incident</masterLabel>
+        <openType>replace</openType>
+        <page>CaseCreateIncident</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>CustomerConnections</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Customer Connections</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://intranet/focalpoint/CustomForms/FormHost.aspx#FormTypeID=111</url>
+    </webLinks>
+    <webLinks>
+        <fullName>DataRegister</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Data Register</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://intranet/focalpoint/CustomForms/FormHost.aspx#FormTypeID=177</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Reparent_Child_Case</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Reparent Child Case</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/flow/Reparent_Child_Case?OldCaseID={!Case.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Resolve_Case</fullName>
+        <availability>online</availability>
+        <description>Resolve Case</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Resolve/UnResolve Case</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/flow/screentest?CaseID={!Case.Id}&amp;retURL={!Case.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>UpdateCaseWaitingTime</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Update Case Waiting Time</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/flow/RecalculateImportance?RecalculateFieldID={!Case.ImportanceRecalculation__c}&amp;CaseID={!Case.Id}</url>
+    </webLinks>
+</CustomObject>

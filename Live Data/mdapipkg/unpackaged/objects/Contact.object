@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Department__c</fullName>
+        <externalId>false</externalId>
+        <label>Department</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Person_Department</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Marketing_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Marketing Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Marketing Lead</fullName>
+                    <default>false</default>
+                    <label>Marketing Lead</label>
+                </value>
+                <value>
+                    <fullName>Ready to Contact</fullName>
+                    <default>false</default>
+                    <label>Ready to Contact</label>
+                </value>
+                <value>
+                    <fullName>Contacting</fullName>
+                    <default>false</default>
+                    <label>Contacting</label>
+                </value>
+                <value>
+                    <fullName>Engaged</fullName>
+                    <default>false</default>
+                    <label>Engaged</label>
+                </value>
+                <value>
+                    <fullName>Discovery</fullName>
+                    <default>false</default>
+                    <label>Discovery</label>
+                </value>
+                <value>
+                    <fullName>New Business</fullName>
+                    <default>false</default>
+                    <label>New Business</label>
+                </value>
+                <value>
+                    <fullName>Existing Customer</fullName>
+                    <default>false</default>
+                    <label>Existing Customer</label>
+                </value>
+                <value>
+                    <fullName>Recycled</fullName>
+                    <default>false</default>
+                    <label>Recycled</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+                <value>
+                    <fullName>Existing Account</fullName>
+                    <default>false</default>
+                    <label>Existing Account</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>NPS__c</fullName>
+        <description>NPS Contact Status</description>
+        <externalId>false</externalId>
+        <inlineHelpText>NPS Contact Status</inlineHelpText>
+        <label>NPS Contact</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>DNC</fullName>
+                    <default>false</default>
+                    <label>DNC</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Seniority__c</fullName>
+        <externalId>false</externalId>
+        <label>Seniority</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Person_Seniority</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Deceased</fullName>
+                    <default>false</default>
+                    <label>Deceased</label>
+                </value>
+                <value>
+                    <fullName>Duplicate</fullName>
+                    <default>false</default>
+                    <label>Duplicate</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+                <value>
+                    <fullName>Left Company</fullName>
+                    <default>false</default>
+                    <label>Left Company</label>
+                </value>
+                <value>
+                    <fullName>Maternity Leave</fullName>
+                    <default>false</default>
+                    <label>Maternity Leave</label>
+                </value>
+                <value>
+                    <fullName>Sick Leave</fullName>
+                    <default>false</default>
+                    <label>Sick Leave</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Contact_MailingStreet}+{!Contact_MailingCity}+{!Contact_MailingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Contact_FirstName} {!Contact_LastName}</url>
+    </webLinks>
+</CustomObject>
